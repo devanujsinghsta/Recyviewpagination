@@ -6,69 +6,69 @@ import com.google.gson.annotations.SerializedName;
 import java.util.List;
 
 public class ModelData {
-        @SerializedName("page")
-        @Expose
-        private Integer page;
-        @SerializedName("per_page")
-        @Expose
-        private Integer perPage;
-        @SerializedName("total")
-        @Expose
-        private Integer total;
-        @SerializedName("total_pages")
-        @Expose
-        private Integer totalPages;
-        @SerializedName("data")
-        @Expose
-        private List<Datum> data = null;
+    @SerializedName("page")
+    @Expose
+    private Integer page;
+    @SerializedName("per_page")
+    @Expose
+    private Integer perPage;
+    @SerializedName("total")
+    @Expose
+    private Integer total;
+    @SerializedName("total_pages")
+    @Expose
+    private Integer totalPages;
+    @SerializedName("data")
+    @Expose
+    private List<Datum> data = null;
 
-        public Integer getPage() {
-            return page;
-        }
+    public Integer getPage() {
+        return page;
+    }
 
-        public void setPage(Integer page) {
-            this.page = page;
-        }
+    public void setPage(Integer page) {
+        this.page = page;
+    }
 
-        public Integer getPerPage() {
-            return perPage;
-        }
+    public Integer getPerPage() {
+        return perPage;
+    }
 
-        public void setPerPage(Integer perPage) {
-            this.perPage = perPage;
-        }
+    public void setPerPage(Integer perPage) {
+        this.perPage = perPage;
+    }
 
-        public Integer getTotal() {
-            return total;
-        }
+    public Integer getTotal() {
+        return total;
+    }
 
-        public void setTotal(Integer total) {
-            this.total = total;
-        }
+    public void setTotal(Integer total) {
+        this.total = total;
+    }
 
-        public Integer getTotalPages() {
-            return totalPages;
-        }
+    public Integer getTotalPages() {
+        return totalPages;
+    }
 
-        public void setTotalPages(Integer totalPages) {
-            this.totalPages = totalPages;
-        }
+    public void setTotalPages(Integer totalPages) {
+        this.totalPages = totalPages;
+    }
 
-        public List<Datum> getData() {
-            return data;
-        }
+    public List<Datum> getData() {
+        return data;
+    }
 
-        public void setData(List<Datum> data) {
-            this.data = data;
-        }
+    public void setData(List<Datum> data) {
+        this.data = data;
+    }
+
     public class Datum {
-
         @SerializedName("id")
         @Expose
         private Integer id;
         @SerializedName("username")
         @Expose
-        private String username;
+        public String username;
         @SerializedName("about")
         @Expose
         private String about;
@@ -154,4 +154,4 @@ public class ModelData {
 
     }
 
-    }
+}

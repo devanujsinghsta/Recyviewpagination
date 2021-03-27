@@ -3,6 +3,7 @@ package com.example.anujtest.utils;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.Build;
+import android.widget.Toast;
 
 public class UtilFunction {
     private static ProgressDialog progressDialog;
@@ -10,12 +11,10 @@ public class UtilFunction {
             if (progressDialog != null) {
                 progressDialog.dismiss();
             }
-
             int style;
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                 style = android.R.style.Theme_Material_Light_Dialog;
             } else {
-                //noinspection deprecation
                 style = ProgressDialog.THEME_HOLO_LIGHT;
             }
 
@@ -31,6 +30,9 @@ public class UtilFunction {
                 progressDialog = null;
             }
         }
+    public static void noInternetConnection(Context context) {
+        Toast.makeText(context, "No Internet Cnnection", Toast.LENGTH_SHORT).show();
+    }
 
     }
 

@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    app:cardBackgroundColor="@color/orange_dark"
-    app:cardCornerRadius="20dp"
-    app:cardElevation="10dp"
-    android:layout_margin="8dp"
-    android:layout_alignParentTop="true"
-    android:layout_centerHorizontal="true"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<layout>
+    <data class="ModelViewDautmbinding" >
+        <variable
+            name="ModelViewDautm"
+            type="com.example.anujtest.networkingCalling.ModelData.Datum" />
+
+    </data>
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="@color/orange_dark"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        android:layout_margin="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -30,22 +37,20 @@
                 app:layout_constraintTop_toTopOf="parent"/>
 
             <TextView
-                android:padding="4dp"
                 android:id="@+id/tv_adpter_textview"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
                 android:gravity="start"
+                android:hint="anujsinghsta@gmail.com"
+                android:text="@{ModelViewDautm.username}"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                android:text="anujsinghsta@gmail.com"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@+id/image_adpter_imageview"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/image_adpter_imageview"
-                app:layout_constraintTop_toTopOf="@+id/image_adpter_imageview"
-                app:layout_constraintVertical_bias="0.25" />
+                app:layout_constraintTop_toTopOf="@+id/image_adpter_imageview" />
 
             <TextView
                 android:visibility="gone"
@@ -69,6 +74,9 @@
 
 
     </androidx.cardview.widget.CardView>
+
+
+</layout>
 
 
 
