@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    app:cardBackgroundColor="@color/orange_dark"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp"
+    android:layout_margin="8dp"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_launcher_catel_foreground"
+                android:id="@+id/image_adpter_imageview"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:padding="4dp"
+                android:id="@+id/tv_adpter_textview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:gravity="start"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:text="anujsinghsta@gmail.com"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/image_adpter_imageview"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/image_adpter_imageview"
+                app:layout_constraintTop_toTopOf="@+id/image_adpter_imageview"
+                app:layout_constraintVertical_bias="0.25" />
+
+            <TextView
+                android:visibility="gone"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="Android"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tv_adpter_textview"
+                app:layout_constraintTop_toBottomOf="@+id/tv_adpter_textview" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
